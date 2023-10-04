@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import items from './items';
+import moreItems from './moreItems';
+import ShoppingCart from './ShoppingCart';
+import Greeting from './Greetings';
+// import { add, multiply } from './helpers'
+// import cats, { meow } from './cats'
 import './App.css';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Greeting />
+      <ShoppingCart items={items} username="Taylor" />
+      <ShoppingCart items={moreItems} username="Michael" />
     </div>
   );
 }
 
 export default App;
+
